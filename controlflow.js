@@ -12,26 +12,29 @@ operatingArray();
 let arrNum = [1,2,3,4,5,6,7,8,9];
 function Num (){
     let i = 0;
-    while (i===arrNum[5]) {
-       
+    while (i<arrNum.length) {
+        if(arrNum[i]===arrNum[4]){
+            break;
+        }
         console.log(arrNum[i]);
-        break;
+        i++;
     };
 }
 Num(arrNum);
 //3. Write a function that takes in a an array of strings and use a continue statement when the item is at the second index:  let fruits= ['apple','plum','banana','strawberries','kiwi']
 let fruits = ['apple','plum','banana','strawberries','kiwi'];
 function fruitsLength() {
+    let i = 0;
     for (let i = 0; i < fruits.length; i++) {
-        if (i === 2) 
-        continue;
+        if (fruits[i]=== fruits[2]) {
+            continue;
+        }
     };
     console.log(fruits);
 }
 fruitsLength(fruits)
 //4. Write a function that accepts an array of strings and console.logs each element using a for loop.
 let strArrays = ['Mango', 'Kiwi', 'Apple', 'banana'];
-// let newStrings = [];
 function randomStrings() {
     for (let i = 0; i < strArrays.length; i++) {
        
@@ -42,12 +45,14 @@ function randomStrings() {
 randomStrings(strArrays)
 //5. Write a JavaScript function that takes a string as input and reverses it using a while loop. The function should return the reversed string.
 let scriptStr = ['cat', 'dog','cow', 'milk'];
-// let newStrings = [];
 function reverseStrings() {
+    // let words = [];
     for (let i = 0; i < scriptStr.length; i++) {
-       let y = scriptStr[i].reverse();
-        console.log(y);
+    while (i>= 0) {
+       scriptStr[i] = scriptStr[i].reverse();
+    }
         
     };
-}
-reverseStrings(y)
+    console.log(scriptStr);
+};
+reverseStrings()
