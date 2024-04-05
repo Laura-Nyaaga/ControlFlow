@@ -1,37 +1,119 @@
-#navbar{
-    display: flex;
-    justify-content: space-between;
+body{
+    /* font-size: x-small;
+    margin-right: 25px;
+    margin-left: 25px; */
+    background-color: aquamarine;
+  } 
+#navbar {
+  display: flex;
+  justify-content: space-between;
 }
-#green{
-background-color: green;
-display: flex;
-justify-content: space-evenly;
+#green {
+  background-color: green;
+  display: flex;
+  justify-content: space-evenly;
 }
-#images{
-    display: flex;
-    gap: 20px; 
-    justify-content: center;
+#images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
-#images-2{
+#images-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.images-2 {
+  display: flex;
+}
+#images-3 {
+  display: flex;
+  margin-left: 180px;
+}
+.images-3 {
+  display: flex;
+}
+#caption {
+  margin-left: 100px;
+}
+#materials {
+  display: flex;
+  justify-content: space-evenly;
+}
+#first{
     display: flex;
     justify-content: space-evenly;
 }
-.images-2{
-    display: flex;
+#amazing{
+    text-align: center;
 }
-@media  all and (min-width: 280px) and (max-width: 1024px) {
-    #navbar{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    #images{
+#living{
+    background-image: url(/images/leaves.jpeg);
+    justify-content: center;
+}
+@media all and (min-width: 280px) and (max-width: 1024px) {
+  /* body {
+    overflow: hidden;
+  } */
+  body{
+    font-size: x-small;
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: aquamarine;
+  } 
+  #green {
+    background-color: green;
     display: flex;
-    gap: 20px; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #images {
+    display: flex;
+    gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
-}
-#terra{
+  }
+  #terra {
     width: auto;
-}
+  }
+  #images-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .images-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #images-3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 90px;
+  }
+  .images-3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #caption {
+    margin-left: 50px;
+  }
+  #materials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #image10{
+    width: 50px;
+    height: 50px;
+  }
+  /* .materials{
+    overflow: hidden;
+    flex-wrap: wrap;
+    font-size: x-small;
+    margin-ri;
+  } */
 }
